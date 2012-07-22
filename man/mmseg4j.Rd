@@ -8,8 +8,7 @@ Chinese Word Segmentation
   Chinese word segmentation based on mmseg4j
 }
 \usage{
-mmseg4j(text, method = c("complex", "maxword", "simple"), 
-        dicDir = NULL, reload = FALSE)
+mmseg4j(text, method = c("complex", "maxword", "simple"), dicDir = NULL)
 }
 \arguments{
   \item{text}{
@@ -20,9 +19,6 @@ mmseg4j(text, method = c("complex", "maxword", "simple"),
   }
     \item{dicDir}{
     Directory of user provided dictionary. If NULL, it sets to userDic in the root besides the default dictionaries.
-  }
-      \item{reload}{
-    logical, reload the changed dictionaries
   }
 }
 \details{
@@ -36,8 +32,8 @@ mmseg4j(text, method = c("complex", "maxword", "simple"),
   Ronggui HUANG
 }
 \examples{
-## The example will cause error in latex, so I put it in a demo.
-\dontrun{
-demo(mmseg4j, ask=FALSE)
-}
+## Use the following command to open the example file
+## then you can copy and paste the commands into R
+
+## file.show(file.path(path.package("rmmseg4j"),"mmseg4jExample.R"))
 }
